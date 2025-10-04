@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independence Day Digital Services Offer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .independence-header {
+  background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  flex-wrap: wrap;
+}
+
+.icon-text-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.our-logo {
+  height: 70px;
+  width: auto;
+}
+
+.logo-center img {
+  height: 100px;
+  width: auto;
+}
+
+.service-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* 🌐 Mobile Responsive */
+@media (max-width: 768px) {
+  .independence-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .icon-text-group {
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .service-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-center img {
+    height: 80px;
+  }
+
+  .our-logo {
+    height: 60px;
+  }
+
+  .service-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+    header {
+      height: 90vh;
+      background: url('img/img4.webp') center/cover no-repeat;
+      position: relative;
+      animation: slideShow 20s infinite ease-in-out;
+    }
+
+    @keyframes slideShow {
+      0%    { background-image: url('img/img1.png'); }
+      12.5% { background-image: url('img/img2.jpg'); }
+      25%   { background-image: url('img/img3.jpg'); }
+      37.5% { background-image: url('img/img4.webp'); }
+      50%   { background-image: url('img/dig.jpg'); }
+      62.5% { background-image: url('img/m.jpg'); }
+      75%   { background-image: url('img/mb.jpg'); }
+      87.5% { background-image: url('img/web.jpg'); }
+      100%  { background-image: url('img/web1.jpg'); }
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay h1 {
+      background: rgba(255,255,255,0.85);
+      color: #000;
+      padding: 12px 30px;
+      border-radius: 15px;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+   .overlay .offer {
+  background: #e53935;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  animation: glowBlink 2s ease-in-out infinite;
+}
+
+@keyframes glowBlink {
+  0%, 100% {
+    box-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 5px #ffeb3b;
+    transform: scale(1.03);
+  }
+}
+  .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 60px 20px;
+      background: #f5f5f5;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #e65100;
+    }
+
+
+footer {
+  background: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+}
+
+
+    .promo-banner {
+      position: relative;
+      height: 320px;
+      overflow: hidden;
+    }
+
+    .promo-banner img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+
+
+    .promo-content {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Push content to the left */
+  transform: translateY(-50%); /* Only center vertically */
+  color: #000;
+   background: linear-gradient(to right, #138808, #ffffff, #ff9933);
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Optional: align text to left */
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+    .promo-content h2 {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .promo-content p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+
+    .promo-banner {
+  position: relative;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 20px;  /* or top: 50%; transform: translateY(-50%) if you prefer center */
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+    .service-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 15px;
+      font-size: 22px;
+    }
+
+    .service-icons div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:  blue;
+      transition: color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .service-icons div:hover {
+      color:#ffcc00;
+      transform: scale(1.1);
+    }
+
+    .service-icons i {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .btn-offer {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #ff8800;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-offer:hover {
+      background-color: #ff6600;
+      
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate(-50%, 60%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+  .promo-banner {
+    height: auto;
+  }
+
+  .promo-banner img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .promo-content {
+    position: static;
+    transform: none;
+    margin-top: -60px;
+    padding: 15px 20px;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .promo-content h2 {
+    font-size: 24px;
+  }
+
+  .promo-content p {
+    font-size: 14px;
+  }
+
+  .service-icons {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .service-icons i {
+    font-size: 24px;
+  }
+
+  .btn-offer {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .social-icons {
+    position: static;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
+      
+.scrolling-bar {
+    width: 100vw;
+    overflow: hidden;
+   background-color:  #ff9933;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .blink {
+    color: #ff0;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+    animation: blinkAnim 1s step-start infinite;
+  }
+
+  @keyframes blinkAnim {
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .scrolling-wrapper {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .scrolling-content {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #46e346;
+    padding: 8px 24px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: scrollLeft 15s linear infinite;
+  }
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+/* Wrapper */
+.feature-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Each card + image container */
+.box-wrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.box-wrapper:hover {
+  transform: translateY(-10px);
+}
+
+/* Card itself */
+.box-item {
+  background: linear-gradient(to bottom right, #ffffff, #f7faff);
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.box-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.box-wrapper:hover .box-icon {
+  transform: scale(1.1);
+}
+
+.box-heading {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.box-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Image below card */
+.below-card-img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.box-wrapper:hover .below-card-img {
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-wrapper {
+    width: 90%;
+  }
+}
+
+.service-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-icon {
+  width: 24px;
+  height: 24px;
+}
+
+
+.certified-section {
+  background-color: #fff;
+  padding: 30px 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.certified-section h2 {
+  font-size: 30px;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.ios-badge {
+  width: 300px;
+  max-width: 90%; /* 🟢 Makes image scale within mobile width */
+  height: auto;
+  border-radius: 15px;
+  animation: blinkShadow 1.5s infinite ease-in-out;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Optional glowing animation */
+@keyframes blinkShadow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(255, 255, 255, 1);
+  }
+}
+
+/* 🌐 MOBILE Responsive */
+@media (max-width: 768px) {
+  .certified-section {
+    padding: 20px 10px;
+  }
+
+  .certified-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .ios-badge {
+    width: 200px;
+    max-width: 90%;
+    box-shadow: 0 0 15px rgba(0, 136, 255, 0.25);
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Updated Header Section -->
+  <div class="independence-header">
+  
+
+    <!-- Center Logo -->
+    <div class="logo-center">
+      <img src="img/logo.png" alt="15 August Logo" />
+    </div>
+
+      <!-- Left Side Logo -->
+    <div class="icon-text-group">
+      <img src="img/Backup_of_Untitled-1.png" alt="Our Logo" class="our-logo" />
+    </div>
+
+    <!-- Right Side (Empty) -->
+<div class="icon-text-group">
+  <ul class="service-list">
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/512/11517/11517030.png" alt="Web Design" class="service-icon">
+      Web Design
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/512/1674/1674291.png" alt="Mobile App" class="service-icon">
+      Mobile Application
+    </li>
+    <li>
+      <img src="https://cdn-icons-png.flaticon.com/512/1183/1183709.png" alt="Digital Marketing" class="service-icon">
+      Digital Marketing
+    </li>
+  </ul>
+</div>
+
+  </div>
+
+<header>
+  <div class="overlay">
+    <h1>🎉 Celebrate Independence Day with Digital Freedom!</h1>
+    <div class="offer">Flat 50% OFF on Website Design, Mobile Application, Digital Marketing & More!</div>
+  </div>
+</header>
+
+<br> <br>
+  <section class="feature-wrapper">
+
+    <!-- Card 1 -->
+    <div class="box-wrapper">
+      <div class="box-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/11517/11517030.png" alt="Website Design" class="box-icon">
+        <h3 class="box-heading">Website Design</h3>
+        <p class="box-text">Elegant, fast, and user-friendly websites crafted for your business.</p>
+      </div>
+      <img src="img/w.jpg" alt="Website Design Related" class="below-card-img">
+    </div>
+
+    <!-- Card 2 -->
+    <div class="box-wrapper">
+      <div class="box-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/1674/1674291.png" alt="Mobile App" class="box-icon">
+        <h3 class="box-heading">Mobile Application</h3>
+        <p class="box-text">Native and hybrid apps to grow your mobile-first audience.</p>
+      </div>
+      <img src="img/app.jpg" alt="Mobile App Related" class="below-card-img">
+    </div>
+
+    <!-- Card 3 -->
+    <div class="box-wrapper">
+      <div class="box-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/1183/1183709.png" alt="Marketing" class="box-icon">
+        <h3 class="box-heading">Digital Marketing</h3>
+        <p class="box-text">Boost leads via Google, Facebook, SEO, and content strategies.</p>
+      </div>
+      <img src="img/d.jpg" alt="Digital Marketing Related" class="below-card-img">
+    </div>
+
+  </section>
+
+
+  <section class="certified-section">
+  <h2><u>
+We Are a Certified Company
+  </u>
+    </h2>
+  <img src="img/c.jpg" alt="iOS Certified India" class="ios-badge">
+</section>
+
+
+
+<br> <br>
+
+    <div class="scrolling-bar">
+  <span class="blink">💥 Special Offer:</span>
+  <div class="scrolling-wrapper">
+    <div class="scrolling-content">
+      📲 Contact Now 8277101607 / 8618389900
+    </div>
+  </div>
+   <span class="blink">💥 Special Offer:</span>
+      <div class="scrolling-content">
+      📲 Contact Now 8277101607 / 8618389900
+    </div>
+</div>
+
+<br> <br>
+
+  <div class="row mt-5 fade-in-up" style="animation-delay: 0.8s;">
+    <div class="col-12">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3032035223413!2d77.5565366!3d12.9030897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e1b367d9aa3%3A0x6b50de7ad9ef5a0e!2sFistcom%20IT%20solutions%20india%20pvt%20ltd!5e0!3m2!1sen!2sin!4v1697449340537!5m2!1sen!2sin"
+        width="100%" height="400"
+        style="border: 1px solid #696969; border-radius: 10px;"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+<div class="promo-banner">
+  <img src="img/fo1.jpg" alt="Promotional Banner" class="img-fluid">
+  
+  <div class="promo-content">
+    <h2>Digital Growth Starts Here</h2>
+    <p>Professional Services to Power Your Online Presence</p>
+    <div class="service-icons">
+      <div><i class="fas fa-laptop-code"></i><span>Website</span></div>
+      <div><i class="fas fa-mobile-alt"></i><span>App</span></div>
+      <div><i class="fas fa-bullhorn"></i><span>Marketing</span></div>
+    </div>
+    <button class="btn-offer">Get Free Quote</button>
+  </div>
+
+  <!-- Right Side Social Icons -->
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+   <a href="#"><i class="fab fa-twitter"></i></a>
+
+  </div>
+</div>
+
+  <footer> 
+    🇮🇳 Happy 79th  Independence Day - 2025 • Powered by Fistcom It Solutions India Pvt ltd
+  </footer>
+
+</body>
+</html>
